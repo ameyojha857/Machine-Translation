@@ -6,7 +6,7 @@ class TranslatorApp:
         self.root = root
         self.root.title("English to Hinglish Translator")
 
-        model_directory_path = r"C:\Users\Ameyo\OneDrive\Desktop\Hinglish-TOP-Dataset-main\Hinglish-TOP-Dataset-main\Translation model" # Replace with the actual path
+        model_directory_path = r"C:\Users\Ameyo\OneDrive\Desktop\Hinglish-TOP-Dataset-main\Hinglish-TOP-Dataset-main\Translation model"  # Replace with the actual path to your fine-tuned model
         self.tokenizer = MarianTokenizer.from_pretrained(model_directory_path)
         self.model = MarianMTModel.from_pretrained(model_directory_path)
 
